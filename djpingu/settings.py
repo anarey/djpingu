@@ -1,5 +1,7 @@
 # Django settings for djpingu project.
-DB_PATH='/home/anarey/git/djandoapps/djpingu/djpingu/bd/bd'
+DB_PATH = '/home/anarey/git/djandoapps/djpingu/djpingu/bd/bd'
+TEMPLATE_PATH = '/home/anarey/git/djandoapps/djpingu/djpingu/templates'
+
 #DJANGO_SETTINGS_MODULE=djpingu.settings
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -104,6 +106,7 @@ ROOT_URLCONF = 'djpingu.urls'
 WSGI_APPLICATION = 'djpingu.wsgi.application'
 
 TEMPLATE_DIRS = (
+    TEMPLATE_PATH,
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
